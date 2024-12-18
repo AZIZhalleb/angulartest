@@ -1,0 +1,6 @@
+<div *ngFor="let album of albums">
+    <img [src]="album.coverPicture" alt="Cover Picture" width="100" />
+    <h2>{{ album.title }}</h2>
+    <button (click)="deleteAlbum(album.id)">Supprimer</button>
+  </div>
+  
